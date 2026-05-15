@@ -15,7 +15,7 @@ JLPT Full Data
 /* ===================================== */
 /* TOGGLE STICKY */
 /* ===================================== */
-.extensionToggle{
+.extension-toggle{
 
     position:sticky;
 
@@ -36,6 +36,13 @@ JLPT Full Data
     gap: 8px;
 }  
 
+.extension-toggle{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:12px 0 20px 0;
+    font-family:sans-serif;
+}
 
 .toggle-text{
     font-size:14px;
@@ -88,6 +95,30 @@ input:checked + .slider:before{
     transform:translateX(24px);
 }
 
+/* ===================================== */
+/* TOGGLE STICKY */
+/* ===================================== */
+.extension-toggle{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999999;
+
+    background:#ffffff;
+
+    padding:8px 8px;
+
+    border-bottom:1px solid #333;
+
+    display:flex;
+
+    align-items:center;
+
+    gap: 8px;
+}
+
 body{
     font-family:Arial;
     padding:20px;
@@ -128,12 +159,12 @@ tr:nth-child(even){
 
  
 <div style="display:flex; align-items:center; gap:16px;">
-
-    <!-- toggle -->
+<!-- 
+  
     <label id="extensionToggle">
         <input type="checkbox">
         <span>Enable Analyze</span>
-    </label>
+    </label> -->
 
     <!-- navigate link -->
     <a href="jlpt_grammar.html">
